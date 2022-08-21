@@ -1,0 +1,75 @@
+.login {
+    padding: 1rem 2rem;
+    .login-cover {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .login-info {
+        .welcome-text {
+            font-weight: bolder;
+            color: $darkBlue;
+        }
+        .info-text {
+            font-size: .8rem;
+            color: $lightGrey;
+        }
+    }
+    .login-form {
+        .input-group {
+            position: relative;
+            .input-icon {
+                position: absolute;
+                z-index: 6;
+                top: 24%;
+                left: 5%;
+                i {
+                    color: $mainColor;
+                }
+            }
+            input {
+                padding-left: 2.5rem;
+                width: 100%;
+            }
+        }
+        input {
+            border-radius: 2px;
+            border-color: $mainColor;
+            margin: 0.5rem 0;
+            border-width: 1.5px;
+        }
+        .form-check {
+            padding-left: 0;
+            display: flex;
+            .form-check-input:checked {
+                background-color: $mainColor;
+            }
+            label {
+                font-size: .9rem;
+                color: $darkBlue;
+                margin: .2rem .5rem;
+            }
+        }
+        .login-link {
+            font-size: .85rem;
+            color: $darkBlue;
+            text-decoration: none;
+            display: block;
+        }
+        .login-btn {
+            background-color: $mainColor;
+            color: $whiteColor;
+            font-size: .9rem;
+            border-radius: 2px;
+            border-color: $mainColor;
+            width: 7rem;
+            height: 2.5rem;
+            font-weight: bold;
+            margin-bottom: .5rem;
+            &:hover {
+                color: $mainColor;
+                background-color: transparent;
+            }
+        }
+    }
+}

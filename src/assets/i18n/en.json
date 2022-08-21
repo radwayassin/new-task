@@ -1,0 +1,21 @@
+{
+    "loginPage": {
+        "welcomeText":"Welcome Back!",
+        "loginText":"Login to Contuniue",
+        "email":"Email",
+        "password":"Password",
+        "remember":"Remember me",
+        "forget":"Forget password?",
+        "signUp":"New user? Sign up!",
+        "signIn":"Sign In",
+        "emailRequir":"Email is required",
+        "passRequir":"Password is required",
+        "emailValid":"Enter a valid email address",
+        "passValid":"Password should have minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number"
+    },
+    "footer":{
+        "copyright":"Copyright Reserved ©2021",
+        "privacy":"Privacy Policy",
+        "terms":"Terms and Conditions"
+    }
+}

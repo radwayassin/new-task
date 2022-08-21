@@ -1,0 +1,19 @@
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+    .login {
+        .login-form {
+            .input-group {
+                .input-icon {
+                    right: 5%;
+                    left: unset;
+                }
+                input {
+                    padding-right: 2.5rem;
+                    padding-left: .5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.main-footer {
+    .copywrite-text {
+        color: $darkBlue;
+        font-size: 0.8rem;
+    }
+    .footer-list {
+        list-style: none;
+        padding: 0;
+        display: inline-flex;
+        li {
+            margin: 0 .3rem;
+            color: $lightGrey;
+            font-size: 0.5rem;
+            display: flex;
+            align-items: center;
+            a {
+                font-size: 0.8rem;
+                text-decoration: none;
+                color: $darkBlue;
+            }
+        }
+    }
+}

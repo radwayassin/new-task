@@ -1,0 +1,64 @@
+<div class="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="login-cover" src="./../../../assets/images/loginImage.jpg" alt="login cover">
+            </div>
+            <div class="col-md-6">
+                <div class="login-info">
+                    <h3 class="welcome-text">{{'loginPage.welcomeText' | translate}}</h3>
+                    <p class="info-text">{{'loginPage.loginText' | translate}}</p>
+                </div>
+                <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="input-group col-12">
+                            <span class="input-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="email" class="form-control" formControlName="email"
+                                [placeholder]="'loginPage.email' | translate">
+                            <div class="text-danger small"
+                                *ngIf="(loginFormControl['email'].touched || submitted) && loginFormControl['email'].errors?.['required']">
+                                {{'loginPage.emailRequir'|translate}}
+                            </div>
+                            <div class="text-danger small"
+                                *ngIf="loginFormControl['email'].touched && loginFormControl['email'].errors?.['email']">
+                                {{'loginPage.emailValid'|translate}}
+                            </div>
+                        </div>
+                        <div class="input-group has-validation col-12">
+                            <span class="input-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" formControlName="password"
+                                [placeholder]="'loginPage.password' | translate">
+                            <br>
+                            <div class="text-danger small"
+                                *ngIf="(loginFormControl['password'].touched || submitted) && loginFormControl['password'].errors?.['required']">
+                                {{'loginPage.passRequir'|translate}}
+                            </div>
+                            <div class="text-danger small"
+                                *ngIf="loginFormControl['password'].touched && loginFormControl['password'].errors?.['pattern']">
+                                {{'loginPage.passValid'|translate}}
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">{{'loginPage.remember' |
+                                    translate}}</label>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                            <a href="#" class="login-link">{{'loginPage.forget' | translate}}</a>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn login-btn">{{'loginPage.signIn' | translate}}</button>
+                            <a href="#" class="login-link">{{'loginPage.signUp' | translate}}</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

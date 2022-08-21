@@ -1,0 +1,14 @@
+.main-frame {
+    background-image: url('./../../images/mainBackground.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages-frame {
+    background-color: $whiteColor;
+    margin: .5rem;
+}
